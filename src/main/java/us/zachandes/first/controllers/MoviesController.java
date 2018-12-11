@@ -1,5 +1,7 @@
 package us.zachandes.first.controllers;
 
+import org.apache.juli.logging.Log;
+import org.apache.juli.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import us.zachandes.first.service.MovieService;
@@ -36,4 +38,5 @@ public class MoviesController {
     public void deleteMovie(@PathVariable String id){
         movieService.deleteMovie(id);
     }
+
 }
